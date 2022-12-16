@@ -20,13 +20,15 @@ Here's [my reply](https://www.reddit.com/r/AskUK/comments/zmiv5z/what_is_an_inte
 This repository contains the code for not only checking that *Pimlico* really
 is the only London Underground station that *doesn't* share any letters with
 the word *badger*, or that *St John's Wood* is the only one that doesn't
-share any letters with *mackerel*, but also for find all the words like
+share any letters with *mackerel*, but also to find all the words like
 *badger* and *mackerel* that share letters with every tube station except one.
 
 Since posting my original reply I've modified the code to use a more selective
 dictionary that contains the 25,000 most popular words in the English language.
 The results show that there are 3,485 words like *badger* and *mackerel*,
 for which there is only one station that doesn't share any letters with it.
+
+The full list of words and stations can be found [here](data/word-stations.csv).
 
 # Installation
 

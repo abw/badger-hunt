@@ -1,4 +1,4 @@
-// Script to output all matching words for a particular station.
+// Script to output all matching words for a particular US state.
 import { options } from '@abw/badger'
 import { readFileSync } from 'node:fs'
 

@@ -247,6 +247,12 @@ const DATA_FILE     = './data/station-data.json';
 
 In response to a request from Reddit, I've added the data for US states.
 
+* [data/us-states.txt](data/us-states.txt) - source list
+* [data/us-states-data.json](data/us-states-data.json) - full data for words matching states
+* [data/us-states-count.csv](data/us-states-count.csv) - count of matching words by state
+* [data/word-us-states.csv](data/word-us-states.csv) - words matching each state
+* [us-state-words.js](us-state-words.js) - script to lookup words for a state
+
 # Sources
 
 The list of [London Underground stations](data/tube-stations.txt)

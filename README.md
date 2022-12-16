@@ -2,13 +2,18 @@
 
 *We're going on a badger hunt, we're going to find a single one...*
 
-It all began on the [/r/AskUK](https://www.reddit.com/r/AskUK/) subreddit
-in December 2022.  In response to the question
-[What is an interesting British fact you know?](https://www.reddit.com/r/AskUK/comments/zmiv5z/what_is_an_interesting_british_fact_you_know/j0c524j/),
+In response to the question
+[What is an interesting British fact you know?](https://www.reddit.com/r/AskUK/comments/zmiv5z/what_is_an_interesting_british_fact_you_know/j0c524j/), asked
+on the [/r/AskUK](https://www.reddit.com/r/AskUK/) subreddit in December 2022,
 [/u/roomal29 replied](https://www.reddit.com/r/AskUK/comments/zmiv5z/what_is_an_interesting_british_fact_you_know/j0bkomt/):
 
     Pimlico is the only London Underground station that shares no letters
     with the word Badger.
+
+My curiosity was piqued.  Being a fan of badgers (as you might guess from the
+naming convention of many of my repositories), and liking a challenge, I
+decided to write some code to check that this was correct and find other
+combinations of words and stations that match the pattern.
 
 Here's [my reply](https://www.reddit.com/r/AskUK/comments/zmiv5z/what_is_an_interesting_british_fact_you_know/j0c524j/).
 
@@ -17,6 +22,11 @@ is the only London Underground station that *doesn't* share any letters with
 the word *badger*, or that *St John's Wood* is the only one that doesn't
 share any letters with *mackerel*, but also for find all the words like
 *badger* and *mackerel* that share letters with every tube station except one.
+
+Since posting my original reply I've modified the code to use a more selective
+dictionary that contains the 25,000 most popular words in the English language.
+The results show that there are 3,485 words like *badger* and *mackerel*,
+for which there is only one station that doesn't share any letters with it.
 
 # Installation
 

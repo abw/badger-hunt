@@ -243,6 +243,10 @@ const COUNT_FILE    = './data/station-count.csv';
 const DATA_FILE     = './data/station-data.json';
 ```
 
+# US States
+
+In response to a request from Reddit, I've added the data for US states.
+
 # Sources
 
 The list of [London Underground stations](data/tube-stations.txt)

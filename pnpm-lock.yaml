@@ -1,22 +1,46 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@abw/badger': ^1.0.10
+  '@abw/badger': ^1.1.11
 
 dependencies:
-  '@abw/badger': 1.0.10
+  '@abw/badger': 1.1.11
 
 packages:
+
+  /@abw/badger-codecs/1.0.2:
+    resolution: {integrity: sha512-L8w3z+7MXiKZwRxSRYclKtk1+vWCbFKEDIfzN+xgpTBsHSox+36GdpbA1BoC+bJWSSagU5upYnOzStaGdnripg==}
+    dependencies:
+      '@abw/badger-utils': 1.0.16
+      js-yaml: 4.1.0
+    dev: false
+
+  /@abw/badger-filesystem/1.0.2:
+    resolution: {integrity: sha512-dQ0Wjs+N/owZ2zkJVyMBuKLZC3lVOg5/sVWmnHP5jAxdiEhJSqdKN69c43xMeL7HvwpJPt4swels9zO9c9uQ7w==}
+    dependencies:
+      '@abw/badger-codecs': 1.0.2
+      '@abw/badger-utils': 1.0.16
+    dev: false
+
+  /@abw/badger-timestamp/1.0.4:
+    resolution: {integrity: sha512-7JBcF9rxwihiiEG1UQlv1/jdntg8BJmzTADAj5psTWbRNvDh4XHkdeoVnbf0nRCq08q5472mx8wbpgNzrwb2RQ==}
+    dependencies:
+      '@abw/badger-utils': 1.0.16
+    dev: false
 
   /@abw/badger-utils/1.0.16:
     resolution: {integrity: sha512-fozmV5pbtMrGREjZQFfYluAPTq/LtSxEDBuTmgQrJyovv8ddH5gxIfrThsFTixHSGoXy5PlIeF1FgBQ/C8AwbQ==}
     dev: false
 
-  /@abw/badger/1.0.10:
-    resolution: {integrity: sha512-ZgMVwGkY0L7dHcL4v7YrGg8FxQdb5+4eZHxEsH7ujzkjDaf5oqOUfGhQftVQ1gpFhz3OkpeaOsNJLngVpwEk5Q==}
+  /@abw/badger/1.1.11:
+    resolution: {integrity: sha512-GGWg7eoNyYX63TDKrk0wziORGHEsPRgP+9wEQHm2pM6z1e3oEk5x8EpTo+91/EmJuqv1Z2keyu1e7qC5FZTGxg==}
     dependencies:
+      '@abw/badger-codecs': 1.0.2
+      '@abw/badger-filesystem': 1.0.2
+      '@abw/badger-timestamp': 1.0.4
       '@abw/badger-utils': 1.0.16
-      commander: 9.4.1
+      commander: 9.5.0
+      dotenv: 16.0.3
       js-yaml: 4.1.0
       prompts: 2.4.2
     dev: false
@@ -25,9 +49,14 @@ packages:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
     dev: false
 
-  /commander/9.4.1:
-    resolution: {integrity: sha512-5EEkTNyHNGFPD2H+c/dXXfQZYa/scCKasxWcXJaWnNJ99pnQN9Vnmqow+p+PlFPE63Q6mThaZws1T+HxfpgtPw==}
+  /commander/9.5.0:
+    resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
     engines: {node: ^12.20.0 || >=14}
+    dev: false
+
+  /dotenv/16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
     dev: false
 
   /js-yaml/4.1.0:

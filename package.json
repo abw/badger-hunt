@@ -14,7 +14,7 @@
     "Pimlico"
   ],
   "dependencies": {
-    "@abw/badger": "^1.0.10"
+    "@abw/badger": "^1.1.11"
   },
   "repository": {
     "type": "git",
